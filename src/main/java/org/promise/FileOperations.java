@@ -24,7 +24,7 @@ public class FileOperations {
         System.out.println("Enter file name (e.g \"notes.csv\") :  ");
         Scanner scanner = new Scanner(System.in);
         String userFile = scanner.nextLine();
-        Path filePath = Path.of("C:\\Users\\MANNEX\\Desktop\\java class\\CsvToDB\\" + userFile);
+        Path filePath = Path.of("./" + userFile);
         boolean exists = Files.exists(filePath);
         if (!exists) {
             System.out.println("The file does not exist!!!!!!             " + filePath);
